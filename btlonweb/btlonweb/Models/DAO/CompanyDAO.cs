@@ -12,6 +12,6 @@ namespace btlonweb.Models.DAO
         {
             db = new OnlineDbContext();
         }
-
+        
     }
 }
