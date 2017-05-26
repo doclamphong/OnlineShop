@@ -6,25 +6,28 @@
 }
 <div class="features_items">
     <!--features_items-->
-    <h2 class="title text-center">Features Items</h2>
+    <h2 class="title text-center">Sản phẩm mới</h2>
     <div class="container">
         <div class="row">
-            @foreach (var item in Model)
+            @{ int i; }
+            @for ( i = 0; i <3; i++)
             {
                 <div class="col-sm-3">
                     <div class="product-image-wrapper">
                         <div class="single-products">
                             <div class="productinfo text-center">
-                                <img src="@Url.Content("~/Content/images/AnhSanPham/"+item.Image)" alt="" />
-                                <h2>@string.Format("{0:0,0}", Convert.ToInt32(item.Price)) VNĐ</h2>
+                                <a href="@Url.Action("ProductDetail","Home",new { @ProductID=Model.ElementAt(i).ID,@CategoryID=Model.ElementAt(i).CategoryID})">
+                                    <img src="@Url.Content("~/Content/images/AnhSanPham/"+Model.ElementAt(i).Image)" alt="" />
+                                </a>
+                                <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
 
-                                @if (item.Name.Length > 25)
+                                @if (Model.ElementAt(i).Name.Length > 25)
                                 {
-                                    <p>@item.Name.Substring(0, 25)...</p>
+                                    <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
                                 }
                                 else
                                 {
-                                    <p>@item.Name</p>
+                                    <p>@Model.ElementAt(i).Name</p>
                                 }
 
 
@@ -32,14 +35,14 @@
                             </div>
                             <div class="product-overlay">
                                 <div class="overlay-content">
-                                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(item.Price)) VNĐ</h2>
-                                    @if (item.Name.Length > 25)
+                                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+                                    @if (Model.ElementAt(i).Name.Length > 25)
                                     {
-                                        <p>@item.Name.Substring(0, 25)...</p>
+                                        <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
                                     }
                                     else
                                     {
-                                        <p>@item.Name</p>
+                                        <p>@Model.ElementAt(i).Name</p>
                                     }
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </div>
@@ -47,14 +50,151 @@
                         </div>
                         <div class="choose">
                             <ul class="nav nav-pills nav-justified">
-                                <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=item.ID,@CategoryID=item.CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                                <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=Model.ElementAt(i).ID,@CategoryID= Model.ElementAt(i).CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             }
         </div>
-        
+        <div class="row">
+            @for ( i = 3; i <=5; i++)
+            {
+                <div class="col-sm-3">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="productinfo text-center">
+                                <img src="@Url.Content("~/Content/images/AnhSanPham/"+Model.ElementAt(i).Image)" alt="" />
+                                <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+
+                                @if (Model.ElementAt(i).Name.Length > 25)
+                                {
+                                    <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                }
+                                else
+                                {
+                                    <p>@Model.ElementAt(i).Name</p>
+                                }
+
+
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+                                    @if (Model.ElementAt(i).Name.Length > 25)
+                                    {
+                                        <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                    }
+                                    else
+                                    {
+                                        <p>@Model.ElementAt(i).Name</p>
+                                    }
+                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose">
+                            <ul class="nav nav-pills nav-justified">
+                                <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=Model.ElementAt(i).ID,@CategoryID= Model.ElementAt(i).CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row">
+            @for ( i = 6; i <=8; i++)
+            {
+                <div class="col-sm-3">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="productinfo text-center">
+                                <img src="@Url.Content("~/Content/images/AnhSanPham/"+Model.ElementAt(i).Image)" alt="" />
+                                <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+
+                                @if (Model.ElementAt(i).Name.Length > 25)
+                                {
+                                    <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                }
+                                else
+                                {
+                                    <p>@Model.ElementAt(i).Name</p>
+                                }
+
+
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+                                    @if (Model.ElementAt(i).Name.Length > 25)
+                                    {
+                                        <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                    }
+                                    else
+                                    {
+                                        <p>@Model.ElementAt(i).Name</p>
+                                    }
+                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose">
+                            <ul class="nav nav-pills nav-justified">
+                                <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=Model.ElementAt(i).ID,@CategoryID= Model.ElementAt(i).CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row">
+            @for (i = 9; i <= 11; i++)
+            {
+                <div class="col-sm-3">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="productinfo text-center">
+                                <img src="@Url.Content("~/Content/images/AnhSanPham/"+Model.ElementAt(i).Image)" alt="" />
+                                <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+
+                                @if (Model.ElementAt(i).Name.Length > 25)
+                                {
+                                    <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                }
+                                else
+                                {
+                                    <p>@Model.ElementAt(i).Name</p>
+                                }
+
+
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(Model.ElementAt(i).Price)) VNĐ</h2>
+                                    @if (Model.ElementAt(i).Name.Length > 25)
+                                    {
+                                        <p>@Model.ElementAt(i).Name.Substring(0, 25)...</p>
+                                    }
+                                    else
+                                    {
+                                        <p>@Model.ElementAt(i).Name</p>
+                                    }
+                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose">
+                            <ul class="nav nav-pills nav-justified">
+                                <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=Model.ElementAt(i).ID,@CategoryID= Model.ElementAt(i).CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 
 </div><!--features_items-->

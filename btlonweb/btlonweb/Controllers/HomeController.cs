@@ -65,5 +65,30 @@ namespace btlonweb.Controllers
 
             return View();
         }
+
+        public ActionResult getProductByCategoryID(int CategoryID)
+        {
+            ProductDAO proDAO = new ProductDAO();
+            return View(proDAO.getProductByCategoryID(CategoryID));
+        }
+        public ActionResult getProductByCompany(int CompanyID)
+        {
+            ProductDAO proDAO = new ProductDAO();
+            return View(proDAO.getProductByCompanyID(CompanyID));
+        }
+        public ActionResult ProductDetail(int ProductID, int CategoryID)
+        {
+            ProductDAO proDAO = new ProductDAO();
+            Session["SPLQ"] = null;
+            Session["SPLQ"] = CategoryID;
+            return View(proDAO.ProductDetail(ProductID));
+        }
+        public PartialViewResult ProductRelated()
+        {
+            int CategoryID = (int)Session["SPLQ"];
+            ProductDAO proDAO = new ProductDAO();
+            IQueryable<Product> rs = proDAO.getProductByCategoryID(CategoryID).Take(4);
+            return PartialView(rs);
+        }
     }
 }

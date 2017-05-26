@@ -1234,6 +1234,11 @@
     <Content Include="Views\Shared\SliderPartial.cshtml" />
     <Content Include="Views\Shared\CategoryPartial.cshtml" />
     <Content Include="Views\Shared\BrandsPartial.cshtml" />
+    <Content Include="Views\Home\getProductByCategoryID.cshtml" />
+    <Content Include="Views\Home\getProductByCompany.cshtml" />
+    <Content Include="Views\Home\ProductDetail.cshtml" />
+    <Content Include="Views\Shared\ProductRelated.cshtml" />
+    <Content Include="Views\Home\ProductRelated.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,7 +7,7 @@
     {
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4 class="panel-title"><a href="#">@item.Name</a></h4>
+                <h4 class="panel-title"><a href="@Url.Action("getProductByCategoryID","Home", new { @CategoryID = item.ID})">@item.Name</a></h4>
             </div>
         </div>
     }

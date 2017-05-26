@@ -1,0 +1,65 @@
+﻿@using Model.EF
+@model Product
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductDetail</title>
+</head>
+<body>
+    @*<div class="container"></div>*@
+    @*<div class="col-sm-9 padding-right">*@
+    <div class="product-details">
+        <!--product-details-->
+        <div class="col-sm-5">
+            <div class="view-product">
+                <img src="@Url.Content("~/Content/images/AnhSanPham/"+@Model.Image)" alt="" />
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="product-information">
+                <!--/product-information-->
+                
+                <h2>@Model.Name</h2>
+                <p> Mã sản phẩm : @Model.ID</p>
+                <h3>@Model.Description</h3>
+
+                <span>
+                    <span>@string.Format("{0:0,0}", Convert.ToInt32(Model.Price)) VNĐ</span>
+
+                 
+                    @using (Html.BeginForm("AddNewItem", "ShoppingCart", new { @idProduct = Model.ID, @quantity = 1 }))
+                    {
+                        <button type="submit" style="cursor:progress" class="btn btn-fefault cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                    }
+
+                </span>
+                @if (@Model.Status == true)
+                {
+                    <p><b>Tình Trạng:</b> Còn hàng </p>
+                }
+                else
+                {
+                    <p><b>Tình Trạng:</b> Hết hàng </p>
+                }
+
+                <p><b>Condition:</b> New</p>
+                <p><b>Được bán bởi: </b> HLH-Shop </p>
+
+            </div><!--/product-information-->
+        </div>
+    </div><!--/product-details-->
+
+    @Html.Action("ProductRelated", "Home")
+
+</body>
+</html>
