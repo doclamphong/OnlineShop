@@ -37,6 +37,8 @@ namespace Model.EF
 
         public int Quantity { get; set; }
 
+        public long? CompanyID { get; set; }
+
         public long? CategoryID { get; set; }
 
         [Column(TypeName = "ntext")]

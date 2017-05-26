@@ -15,6 +15,7 @@ namespace Model.EF
         public virtual DbSet<About> Abouts { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<CategoryProduct> CategoryProducts { get; set; }
+        public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Content> Contents { get; set; }
         public virtual DbSet<ContentTag> ContentTags { get; set; }
@@ -74,6 +75,18 @@ namespace Model.EF
             modelBuilder.Entity<CategoryProduct>()
                 .Property(e => e.MetaDescriptions)
                 .IsFixedLength();
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.Mobile)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.Email)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Company>()
+                .Property(e => e.BankAccountNumber)
+                .IsUnicode(false);
 
             modelBuilder.Entity<Content>()
                 .Property(e => e.Image)
