@@ -12,7 +12,8 @@ namespace btlonweb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ProductDAO proDAO = new ProductDAO();
+            return View(proDAO.getProductByCreateDate());
         }
         public PartialViewResult HeaderTopPartial()
         {

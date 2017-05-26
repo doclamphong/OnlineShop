@@ -1082,6 +1082,8 @@
     <Content Include="Assets\Client\js\jquery.scrollUp.min.js" />
     <Content Include="Assets\Client\js\main.js" />
     <Content Include="Assets\Client\js\price-range.js" />
+    <Content Include="Content\images\AnhSanPham\lovite2.jpg" />
+    <Content Include="Content\images\AnhSanPham\Velvet7.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1243,7 +1245,6 @@
     <Folder Include="Assets\Admin\less\" />
     <Folder Include="Assets\Admin\pages\" />
     <Folder Include="Assets\Admin\vendor\" />
-    <Folder Include="Content\images\AnhSanPham\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

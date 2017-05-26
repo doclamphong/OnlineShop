@@ -16,7 +16,12 @@ namespace btlonweb.Models.DAO
         public IQueryable<Product> getProductByViewCount()
         {
             var rs = (from pro in db.Products orderby pro.ViewCount descending select pro).Take(3);
-            return rs; 
+            return rs;
+        }
+        public IQueryable<Product> getProductByCreateDate()
+        {
+            var rs = (from pro in db.Products orderby pro.CreatedDate descending select pro).Take(12);
+            return rs;
         }
     }
 }
