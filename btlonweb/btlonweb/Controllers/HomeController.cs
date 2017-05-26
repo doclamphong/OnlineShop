@@ -28,7 +28,8 @@ namespace btlonweb.Controllers
         }
         public PartialViewResult SliderPartial()
         {
-            return PartialView();
+            ProductDAO proDAO = new ProductDAO();
+            return PartialView(proDAO.getProductByViewCount());
 
         }
         public PartialViewResult CategoryPartial()
@@ -39,7 +40,8 @@ namespace btlonweb.Controllers
         }
         public PartialViewResult BrandsPartial()
         {
-            return PartialView();
+            CompanyDAO companyDAO = new CompanyDAO();
+            return PartialView(companyDAO.getAllCompany());
         }
         [ChildActionOnly]
         [OutputCache(Duration = 3600 * 24)]
