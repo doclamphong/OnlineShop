@@ -1,0 +1,206 @@
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\csc.exe
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\System.Collections.Immutable.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\vbc.exe
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\VBCSCompiler.exe
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\roslyn\VBCSCompiler.exe.config
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\btlonweb.dll.config
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\btlonweb.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\btlonweb.pdb
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Antlr3.Runtime.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\EntityFramework.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\EntityFramework.SqlServer.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Google.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Web.Infrastructure.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Model.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Newtonsoft.Json.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Owin.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Helpers.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Mvc.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Optimization.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Razor.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.Deployment.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.Razor.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\WebGrease.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\PagedList.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Model.pdb
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Helpers.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Mvc.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Optimization.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Razor.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.Deployment.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.WebPages.Razor.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Antlr3.Runtime.pdb
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Newtonsoft.Json.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\EntityFramework.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\EntityFramework.SqlServer.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Google.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\bin\PagedList.xml
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\obj\Debug\btlonweb.csprojResolveAssemblyReference.cache
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\obj\Debug\btlonweb.dll
+c:\users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\btlonweb\obj\Debug\btlonweb.pdb
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\PagedList.Mvc.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\PagedList.Mvc.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Common.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Http.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Net.Http.Formatting.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Common.pdb
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Web.Http.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Net.Http.Formatting.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.Config.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.Core.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.Host.Owin.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.KeyValue.FileSystem.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.Logs.NLog.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.CKFinder.Connector.WebApp.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.Amazon.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.Azure.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.Dropbox.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.Ftp.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\CKSource.FileSystem.Local.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Autofac.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\ImageProcessor.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\NLog.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\AWSSDK.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Dropbox.Api.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Net.FtpClient.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.OData.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.Edm.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Spatial.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.OData.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\Microsoft.Data.Edm.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\btlonweb\bin\System.Spatial.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\csc.exe
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\System.Collections.Immutable.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\System.Reflection.Metadata.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\vbc.exe
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\VBCSCompiler.exe
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\roslyn\VBCSCompiler.exe.config
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\btlonweb.dll.config
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\btlonweb.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\btlonweb.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Antlr3.Runtime.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Common.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\EntityFramework.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\EntityFramework.SqlServer.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Core.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Cookies.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Facebook.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Google.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.OAuth.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Twitter.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Web.Infrastructure.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Model.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Newtonsoft.Json.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Owin.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\PagedList.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\PagedList.Mvc.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Helpers.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Mvc.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Optimization.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Razor.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.Deployment.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.Razor.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\WebGrease.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Http.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Net.Http.Formatting.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Autofac.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\ImageProcessor.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\NLog.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\AWSSDK.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Dropbox.Api.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Net.FtpClient.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.Services.Client.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.OData.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.Edm.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Azure.KeyVault.Core.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Spatial.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Common.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Model.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\PagedList.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\PagedList.Mvc.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Helpers.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Mvc.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Optimization.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Razor.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.Deployment.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.WebPages.Razor.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Antlr3.Runtime.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Newtonsoft.Json.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\EntityFramework.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\EntityFramework.SqlServer.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Core.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Facebook.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Cookies.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.OAuth.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Google.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.Twitter.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Web.Http.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Net.Http.Formatting.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.Services.Client.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.OData.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\Microsoft.Data.Edm.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\bin\System.Spatial.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\obj\Debug\btlonweb.csprojResolveAssemblyReference.cache
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\obj\Debug\btlonweb.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\btlonweb\obj\Debug\btlonweb.pdb

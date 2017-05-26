@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "btlonweb", "btlonweb\btlonweb.csproj", "{1D006E0C-8E4B-4F05-BC66-E7E8492459EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{717DEF85-5022-4C65-9AF1-9FD0AF8CCB9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{6CF3AFF9-54E9-4881-B06B-CE133B779FD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D006E0C-8E4B-4F05-BC66-E7E8492459EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D006E0C-8E4B-4F05-BC66-E7E8492459EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D006E0C-8E4B-4F05-BC66-E7E8492459EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D006E0C-8E4B-4F05-BC66-E7E8492459EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717DEF85-5022-4C65-9AF1-9FD0AF8CCB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717DEF85-5022-4C65-9AF1-9FD0AF8CCB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717DEF85-5022-4C65-9AF1-9FD0AF8CCB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717DEF85-5022-4C65-9AF1-9FD0AF8CCB9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF3AFF9-54E9-4881-B06B-CE133B779FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF3AFF9-54E9-4881-B06B-CE133B779FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF3AFF9-54E9-4881-B06B-CE133B779FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF3AFF9-54E9-4881-B06B-CE133B779FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

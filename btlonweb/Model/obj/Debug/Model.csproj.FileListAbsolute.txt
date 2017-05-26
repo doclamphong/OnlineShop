@@ -1,0 +1,44 @@
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\Model.dll.config
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\Model.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\Model.pdb
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\EntityFramework.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\PagedList.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\PagedList.Mvc.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\EntityFramework.xml
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\PagedList.xml
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\bin\Debug\PagedList.Mvc.xml
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\obj\Debug\Model.dll
+c:\Users\nguyen linh\documents\visual studio 2015\Projects\btlonweb\Model\obj\Debug\Model.pdb
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\Common.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\System.Web.Http.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\Common.pdb
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\System.Web.Http.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Model\bin\Debug\Newtonsoft.Json.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\obj\Debug\Model.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\obj\Debug\Model.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Model.dll.config
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Model.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Model.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Common.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\EntityFramework.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\PagedList.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\PagedList.Mvc.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\System.Web.Http.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\System.Net.Http.Formatting.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Newtonsoft.Json.dll
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Common.pdb
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\EntityFramework.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\PagedList.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\PagedList.Mvc.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\System.Web.Http.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\System.Net.Http.Formatting.xml
+E:\NGUYENHOANMTA\HocKyII\WEB\btlonweb\btlonweb\Model\bin\Debug\Newtonsoft.Json.xml
