@@ -1,11 +1,11 @@
-﻿@model PagedList.IPagedList<Model.EF.Content>
+﻿@model PagedList.IPagedList<Model.EF.Product>
 @using PagedList.Mvc;
 @{
-    ViewBag.Title = "Quản lý tin tức";
+    ViewBag.Title = "Quản lý sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 @section header{
-    Danh sách tin tức
+    Danh sách sản phẩm
 }
 
 @*@section jsFooter{
@@ -18,12 +18,12 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                Danh sách tin tức
+                Danh sách sản phẩm
             </div>
 
             <!-- /.panel-heading -->
             <div class="panel-body">
-                @using (Html.BeginForm("Index", "Content", FormMethod.Get))
+                @using (Html.BeginForm("Index", "Product", FormMethod.Get))
                 {
                     <div class="row form-group">
                         <div class="col-lg-12">
@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn btn-success">Tìm kiếm</button>
-                                <a class="btn btn-primary" href="/Admin/Content/Create">Thêm mới</a>
+                                <a class="btn btn-primary" href="/Admin/Product/Create">Thêm mới</a>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                                     <td>@item.CreatedDate</td>
                                     <td><a href="#" class="btn-active" data-id="@item.ID">@Html.Raw(item.Status ? "<strong>Kích hoạt</strong>" : "Khoá")</a></td>
                                     <td>
-                                        <a href="/Admin/Content/Edit/@item.ID">Sửa</a>
+                                        <a href="/Admin/Product/Edit/@item.ID">Sửa</a>
                                         |
                                         @Ajax.ActionLink("Xoá", "Delete", new { @id = item.ID }, new AjaxOptions
                                    {

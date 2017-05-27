@@ -13,7 +13,7 @@ namespace Model.EF
 
         public DateTime? CreateDate { get; set; }
 
-        public long? CustomerID { get; set; }
+        public long CustomerID { get; set; }
 
         [StringLength(50)]
         public string ShipName { get; set; }
@@ -27,6 +27,6 @@ namespace Model.EF
         [StringLength(50)]
         public string ShipEmail { get; set; }
 
-        public int? Status { get; set; }
+        public bool Status { get; set; }
     }
 }

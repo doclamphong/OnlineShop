@@ -229,6 +229,7 @@
     <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Assets\Admin\js\plugins\ckfinder\App_Code\ConnectorConfig.cs" />
@@ -1184,6 +1185,12 @@
     <Content Include="Assets\Client\fonts\fontawesome-webfont.woff" />
     <Content Include="Assets\Client\fonts\FontAwesome.otf" />
     <Content Include="Assets\Client\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\getOrderDetailbyOrder.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\thongtinkhachhang.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

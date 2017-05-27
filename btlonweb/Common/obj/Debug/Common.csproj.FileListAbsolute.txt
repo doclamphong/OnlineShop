@@ -26,3 +26,31 @@ C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Common\bin\D
 C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Common\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Common\obj\Debug\Common.dll
 C:\Users\Nguyen Linh\Documents\Visual Studio 2015\Projects\btlonweb\Common\obj\Debug\Common.pdb
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Common.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Common.pdb
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Mail.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Helpers.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Http.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Mvc.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Razor.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Mail.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Helpers.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Http.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Mvc.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.Razor.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\obj\Debug\Common.dll
+C:\Users\Nguyen Linh\Documents\GitHub\OnlineShop\btlonweb\Common\obj\Debug\Common.pdb

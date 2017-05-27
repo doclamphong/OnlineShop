@@ -1,4 +1,4 @@
-﻿using btlonweb.Common;
+﻿using CKSource.FileSystem;
 using Model.Dao;
 using Model.EF;
 using System;
@@ -6,21 +6,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.IO;
-
 
 namespace btlonweb.Areas.Admin.Controllers
 {
-    public class ContentController : Controller
+    public class ProductController : Controller
     {
-        // GET: Admin/Content
+        // GET: Admin/Product
         [HttpGet]
-        public ActionResult Index(string searchString, int page = 1, int pageSize = 2)
+        public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
-            var dao = new ContentDao();
-            var model = dao.ListAllPaging(searchString, page, pageSize);
+            var dao = new ProductDao();
+            var model = dao.LIstAllPaging(searchString, page, pageSize);
             ViewBag.SearchString = searchString;
             return View(model);
+        }
+        public void SetViewBag(long? selectedId = null)
+        {
+            var dao = new CategoryDao();
+            ViewBag.CategoryID = new SelectList(dao.ListAll(), "ID", "Name", selectedId);
         }
         [HttpGet]
         public ActionResult Create()
@@ -28,20 +31,54 @@ namespace btlonweb.Areas.Admin.Controllers
             SetViewBag();
             return View();
         }
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult Create(Product sp, HttpPostedFileBase fileUpload)
+        {
+            OnlineDbContext db = new OnlineDbContext();
+            if (fileUpload == null)
+            {
+                ViewBag.ThongBao = "chọn hình ảnh";
+                return View();
+
+            }
+            if (ModelState.IsValid)
+            {
+                //lưu tên của file ,fileUpload.fileName lấy được tên của ảnh
+                var filename = Path.GetFileName(fileUpload.FileName);
+                //lưu đường dẫn của file
+                // Combine truyền 2 tham số : 1 đường dẫn đến mục AnhSanPham
+                var path = Path.Combine(Server.MapPath("~/Content/images/AnhSanPham/"), filename);
+                //kiểm tra h/a đã tồn tại chưa
+                if (System.IO.File.Exists(path))
+                {
+                    ViewBag.ThongBao = "Hình ảnh đã tồn tại";
+                }
+                else
+                {
+                    fileUpload.SaveAs(path);
+                }
+                sp.Image = fileUpload.FileName;
+                db.Products.Add(sp);
+                db.SaveChanges();
+            }
+            ViewBag.CategoryId = new SelectList(db.Categories.ToList().OrderBy(n => n.ID), "ID", "Name");
+            return RedirectToAction("Index");
+        }
         [HttpGet]
         public ActionResult Edit(long id)
         {
-            var dao = new ContentDao();
-            var content = dao.GetByID(id);
-            SetViewBag(content.CategoryID);
-            return View(content);
+            var dao = new ProductDao();
+            var product = dao.GetByID(id);
+            SetViewBag(product.CategoryID);
+            return View(product);
         }
 
         [HttpPost]
-        public ActionResult Edit(Content sp, HttpPostedFileBase fileUpload)
+        public ActionResult Edit(Product sp, HttpPostedFileBase fileUpload)
         {
             OnlineDbContext db = new OnlineDbContext();
-            var dao = new ContentDao();
+            var dao = new ProductDao();
             if (fileUpload == null)
             {
                 ViewBag.ThongBao = "Chọn hình ảnh";
@@ -69,7 +106,7 @@ namespace btlonweb.Areas.Admin.Controllers
                 if (result)
                 {
                     //SetAlert("Sửa user thành công", "success");
-                    return RedirectToAction("Index", "Content");
+                    return RedirectToAction("Index", "Product");
                 }
                 else
                 {
@@ -79,53 +116,6 @@ namespace btlonweb.Areas.Admin.Controllers
             //SetViewBag(sp.CategoryID);
             ViewBag.CategoryId = new SelectList(db.Categories.ToList().OrderBy(n => n.ID), "ID", "Name");
             return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        [ValidateInput(false)]
-        public ActionResult Create(Content sp, HttpPostedFileBase fileUpload)
-        {
-            OnlineDbContext db = new OnlineDbContext();
-            if (fileUpload == null)
-            {
-                ViewBag.ThongBao = "Chọn hình ảnh";
-                return View();
-            }
-
-            if (ModelState.IsValid)
-            {
-                //lưu tên của file ,fileUpload.fileName lấy được tên của ảnh
-                var filename = Path.GetFileName(fileUpload.FileName);
-                //lưu đường dẫn của file
-                // Combine truyền 2 tham số : 1 đường dẫn đến mục AnhSanPham
-                var path = Path.Combine(Server.MapPath("~/Content/images/AnhSanPham/"), filename);
-                //kiểm tra h/a đã tồn tại chưa
-                if (System.IO.File.Exists(path))
-                {
-                    ViewBag.ThongBao = "Hình ảnh đã tồn tại";
-                }
-                else
-                {
-                    fileUpload.SaveAs(path);
-                }
-                sp.Image = fileUpload.FileName;
-                db.Contents.Add(sp);
-                db.SaveChanges();
-            }
-            ViewBag.CategoryId = new SelectList(db.Categories.ToList().OrderBy(n => n.ID), "ID", "Name");
-            return RedirectToAction("Index");
-        }
-        [HttpDelete]
-        public ActionResult Delete(int id)
-        {
-            new ContentDao().Delete(id);
-
-            return RedirectToAction("Index");
-        }
-        public void SetViewBag(long? selectedId = null)
-        {
-            var dao = new CategoryDao();
-            ViewBag.CategoryID = new SelectList(dao.ListAll(), "ID", "Name", selectedId);
         }
     }
 }

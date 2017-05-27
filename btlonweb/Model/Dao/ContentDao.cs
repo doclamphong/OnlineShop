@@ -128,6 +128,27 @@ namespace Model.Dao
 
             return content.ID;
         }
+        public bool Update(Content entity)
+        {
+            try
+            {
+                var content = db.Contents.Find(entity.ID);
+
+                content.Name = entity.Name;
+                content.MetaTitle = entity.MetaTitle;
+                content.Image = entity.Image;
+                content.ModifiedDate = DateTime.Now;
+                content.Status = entity.Status;
+
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                //logging
+                return false;
+            }
+        }
         public long Edit(Content content)
         {
             //Xử lý alias
