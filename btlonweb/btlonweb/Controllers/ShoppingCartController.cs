@@ -7,6 +7,7 @@ using btlonweb.Common;
 using btlonweb.Models.Bean;
 using btlonweb.Models.DAO;
 using Model.EF;
+
 namespace btlonweb.Controllers
 {
     public class ShoppingCartController : Controller
@@ -22,7 +23,7 @@ namespace btlonweb.Controllers
             }
             return View(gioHang);
         }
-        public ActionResult AddNewItem(int ProductID,int quantity)
+        public ActionResult AddNewItem(int ProductID, int quantity)
         {
             var rs = Session[CommonConstants.CartSession];
             if (rs != null)
@@ -54,7 +55,7 @@ namespace btlonweb.Controllers
 
             if (ss == null)
             {
-                return RedirectToAction("Index","Home",new { area=""});
+                return RedirectToAction("Index", "Home", new { area = "" });
             }
             else
             {
@@ -62,7 +63,7 @@ namespace btlonweb.Controllers
                 return View(list);
             }
         }
-        public ActionResult UpdateCart(int ProductID ,FormCollection f)
+        public ActionResult UpdateCart(int ProductID, FormCollection f)
         {
             ProductDAO proDAO = new ProductDAO();
             Product product = proDAO.ProductDetail(ProductID);
@@ -83,18 +84,56 @@ namespace btlonweb.Controllers
             }
             return RedirectToAction("ShoppingCartIndex", "ShoppingCart");
         }
+        [HttpPost]
         public ActionResult DatHang()
         {
-            var user = Session[CommonConstants.USER_SESSION];
-            if (user == null)
+
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "Login", new { area = "Admin" });
+                if (Session[CommonConstants.USER_SESSION] == null)
+                {
+                    return RedirectToAction("Index", "Login", new { area = "Admin" });
+                }
+                if (Session[CommonConstants.CartSession] == null)
+                {
+                    return RedirectToAction("Index", "Home", new { area = "" });
+                }
+                //Thêm đơn hàng
+                OnlineDbContext db = new OnlineDbContext();
+                var user = (UserLogin)Session[CommonConstants.USER_SESSION];
+                var gioHang = (Cart)Session[CommonConstants.CartSession];
+                Order order = new Order();
+                order.CustomerID = user.UserID;
+                order.CreateDate = DateTime.Now;
+                order.Status = 0;
+                var shipName = Request.Form["txtShipName"];
+                if (shipName == null || shipName == "") {
+                    order.ShipName = "Hoan";
+                }
+                else
+                {
+                    order.ShipName = shipName;
+                }
+                order.ShipAddress = "Hoan";
+                  order.ShipMobile = "0987";
+                //order.ShipAddress = Request.Form["txtShipAddress"];
+                //order.ShipMobile = Request.Form["txtShipMobile"];
+
+                db.Orders.Add(order);
+                db.SaveChanges();
+                foreach (var item in gioHang._listItem)
+                {
+                    OrderDetail orderDetail = new OrderDetail();
+                    orderDetail.OrderID = order.ID;
+                    orderDetail.ProductID = item._product.ID;
+                    orderDetail.Quantity = item._quantity;
+                    orderDetail.Price = item._product.Price;
+                    db.OrderDetails.Add(orderDetail);
+                }
+                db.SaveChanges();
+                Session[CommonConstants.CartSession] = null;
             }
-            if (Session[CommonConstants.CartSession] == null)
-            {
-                return RedirectToAction("Index", "Home", new { area = "" });
-            }
-            return RedirectToAction("Index", "Home", new { area = "" }); 
+            return RedirectToAction("Index", "Home", new { area = "" });
         }
     }
 }

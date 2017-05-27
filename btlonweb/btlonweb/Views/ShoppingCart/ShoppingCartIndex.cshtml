@@ -19,7 +19,7 @@
     <link href="../Assets/Client/css/animate.css" rel="stylesheet">
     <link href="../Assets/Client/css/main.css" rel="stylesheet">
     <link href="../Assets/Client/css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>   
+    <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
@@ -47,7 +47,7 @@
         @Html.Action("HeaderBottomPartial", "Home");
         <!--/header-bottom-->
     </header><!--/header-->
-    
+
     <section id="cart_items">
         <div class="container">
             <div class="breadcrumbs">
@@ -86,7 +86,7 @@
                                     </td>
                                     <td class="cart_quantity">
                                         <div class="cart_quantity_button">
-                                           
+
                                             <input class="txtcart_quantity_input" type="text" readonly="readonly" name="txtSoLuong" value="@item._quantity" autocomplete="off" size="2" />
 
                                         </div>
@@ -107,11 +107,45 @@
                 </table>
 
                 @*<button id="btnContinue" class="btn">Tiếp tục mua hàng </button>*@
-                <a href="@Url.Action("Index","Home",new { area=""})"><span class="btn btn-danger">Tiếp tục mua hàng</span> </a>
-                <a href="@Url.Action("SuaGioHang","ShoppingCart")"><span class="btn btn-danger">Chỉnh sửa giỏ hàng</span> </a>
-                <a href="@Url.Action("DatHang","ShoppingCart")"><span class="btn btn-danger">Đặt hàng</span> </a>
+                <a href="@Url.Action("Index","Home",new { area=""})"><span class="btn btn-success">Tiếp tục mua hàng</span> </a>
+                <a href="@Url.Action("SuaGioHang","ShoppingCart")"><span class="btn btn-success">Chỉnh sửa giỏ hàng</span> </a>
 
             </div>
+            @using (Html.BeginForm("DatHang","ShoppingCart",FormMethod.Post))
+            {
+                @Html.ValidationSummary(true)
+                <div class="table-responsive cart_info">
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr class="cart_menu">
+                                <td class="image">Khách hàng nhận </td>
+                                <td></td>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="cart_product">Tên người nhận: </td>
+                                <td class="cart_description col-sm-10"><input type="text" class="form-control" placeholder="Enter ShipName" name="txtShipName" required /></td>
+                               
+                            </tr>
+                            <tr>
+                                <td class="cart_product">Địa chỉ người nhận: </td>
+                                <td class="cart_description"><input type="text" class="form-control" placeholder="Enter ShipAddress" name="txtShipAddress"  required/></td>
+
+                            </tr>
+                            <tr>
+                                <td class="cart_product"><lable class="ui-controlgroup-label">Số điện thoại người nhận: </lable></td>
+                                <td class="cart_description"><input type="text" class="form-control" placeholder="Enter ShipMobile" name="txtShipMobile" required   /></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <button type="submit" class="btn btn-success">Thanh toán đặt hàng</button>
+                </div>
+            }
         </div>
     </section>
     <footer id="footer">
