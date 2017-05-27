@@ -247,10 +247,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Bean\Cart.cs" />
+    <Compile Include="Models\Bean\ItemCart.cs" />
     <Compile Include="Models\DAO\CategoryProductDAO.cs" />
     <Compile Include="Models\DAO\CompanyDAO.cs" />
     <Compile Include="Models\DAO\ProductDAO.cs" />
@@ -1239,6 +1242,8 @@
     <Content Include="Views\Home\ProductDetail.cshtml" />
     <Content Include="Views\Shared\ProductRelated.cshtml" />
     <Content Include="Views\Home\ProductRelated.cshtml" />
+    <Content Include="Views\Shared\HeaderCenterPartial.cshtml" />
+    <Content Include="Views\ShoppingCart\ShoppingCartIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

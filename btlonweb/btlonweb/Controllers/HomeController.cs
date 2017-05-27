@@ -6,12 +6,15 @@ using System.Web;
 using System.Web.Mvc;
 using Model.EF;
 using btlonweb.Models.DAO;
+using btlonweb.Models.Bean;
+using btlonweb.Common;
 namespace btlonweb.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+
             ProductDAO proDAO = new ProductDAO();
             return View(proDAO.getProductByCreateDate());
         }
@@ -21,7 +24,13 @@ namespace btlonweb.Controllers
         }
         public PartialViewResult HeaderMiddlePartial()
         {
-            return PartialView();
+            var cart = Session[CommonConstants.CartSession];
+            var gioHang = new Cart();
+            if (cart != null)
+            {
+                gioHang = (Cart)cart;
+            }
+            return PartialView(gioHang);
         }
         public PartialViewResult HeaderBottomPartial()
         {
@@ -89,6 +98,22 @@ namespace btlonweb.Controllers
             ProductDAO proDAO = new ProductDAO();
             IQueryable<Product> rs = proDAO.getProductByCategoryID(CategoryID).Take(4);
             return PartialView(rs);
+        }
+        public PartialViewResult HeaderCenterPartial()
+        {
+            var cart = Session[CommonConstants.CartSession];
+            var gioHang = new Cart();
+            if (cart != null)
+            {
+                gioHang = (Cart)cart;
+            }
+            return PartialView(gioHang);
+         
+        }
+        public ActionResult setIndex()
+        {
+            Session[CommonConstants.USER_SESSION] = null;
+            return RedirectToAction("Index", "Home", new { area = "" });
         }
     }
 }

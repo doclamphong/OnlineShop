@@ -129,7 +129,18 @@ namespace Model.Dao
                     }
                     else
                     {
-                        return -3;
+                        if (result.Status == false)
+                        {
+                            return -1;
+                        }
+                        else
+                        {
+                            if (result.Password == passWord)
+                                return -3;
+                            else
+                                return -2;
+                        }
+                       // return -3;
                     }
                 }
                 else

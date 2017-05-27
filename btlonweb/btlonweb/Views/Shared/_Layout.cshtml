@@ -28,7 +28,15 @@
         <!--header-->
         @Html.Action("HeaderTopPartial", "Home");
         <!--/header_top-->
-        @Html.Action("HeaderMiddlePartial", "Home");
+        @if (Session[btlonweb.Common.CommonConstants.USER_SESSION] == null)
+        {
+            @Html.Action("HeaderMiddlePartial", "Home");
+        }
+        else
+        {
+            @Html.Action("HeaderCenterPartial", "Home");
+        }
+
         <!--/header-middle-->
         @Html.Action("HeaderBottomPartial", "Home");
         <!--/header-bottom-->

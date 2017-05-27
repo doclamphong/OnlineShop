@@ -37,5 +37,6 @@ namespace btlonweb.Models.DAO
             var rs = db.Products.Single(n => n.ID == ProductID);
             return rs;
         }
+       
     }
 }
