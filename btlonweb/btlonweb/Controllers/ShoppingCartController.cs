@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using btlonweb.Common;
 using btlonweb.Models.Bean;
+using btlonweb.Models.DAO;
+using Model.EF;
 namespace btlonweb.Controllers
 {
     public class ShoppingCartController : Controller
@@ -46,6 +48,41 @@ namespace btlonweb.Controllers
             return RedirectToAction("ShoppingCartIndex");
         }
 
+        public ActionResult SuaGioHang()
+        {
+            var ss = Session[CommonConstants.CartSession];
+
+            if (ss == null)
+            {
+                return RedirectToAction("Index","Home",new { area=""});
+            }
+            else
+            {
+                Cart list = (Cart)ss;
+                return View(list);
+            }
+        }
+        public ActionResult UpdateCart(int ProductID ,FormCollection f)
+        {
+            ProductDAO proDAO = new ProductDAO();
+            Product product = proDAO.ProductDetail(ProductID);
+            if (product == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
+            else
+            {
+                Cart gioHang = (Cart)Session[CommonConstants.CartSession];
+
+                var sp = gioHang._listItem.SingleOrDefault(n => n._product.ID == ProductID);
+                if (sp != null)
+                {
+                    sp._quantity = Convert.ToInt32(f["txtSoLuong"].ToString());
+                }
+            }
+            return RedirectToAction("ShoppingCartIndex", "ShoppingCart");
+        }
         public ActionResult DatHang()
         {
             var user = Session[CommonConstants.USER_SESSION];

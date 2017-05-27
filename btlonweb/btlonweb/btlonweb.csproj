@@ -1244,6 +1244,7 @@
     <Content Include="Views\Home\ProductRelated.cshtml" />
     <Content Include="Views\Shared\HeaderCenterPartial.cshtml" />
     <Content Include="Views\ShoppingCart\ShoppingCartIndex.cshtml" />
+    <Content Include="Views\ShoppingCart\SuaGioHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

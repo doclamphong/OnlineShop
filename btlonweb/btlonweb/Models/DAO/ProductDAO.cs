@@ -34,7 +34,7 @@ namespace btlonweb.Models.DAO
         }
         public Product ProductDetail(int ProductID)
         {
-            var rs = db.Products.Single(n => n.ID == ProductID);
+            var rs = db.Products.SingleOrDefault(n => n.ID == ProductID);
             return rs;
         }
        
