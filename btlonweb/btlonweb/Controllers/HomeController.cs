@@ -33,6 +33,7 @@ namespace btlonweb.Controllers
             }
             return PartialView(gioHang);
         }
+       
         public PartialViewResult HeaderBottomPartial()
         {
             return PartialView();
@@ -76,19 +77,19 @@ namespace btlonweb.Controllers
             return View();
         }
 
-        public ActionResult getProductByCategoryID(int CategoryID,int? page)
+        public ActionResult getProductByCategoryID(int CategoryID, int? page)
         {
             int pageSize = 6;
             int pageNumber = (page ?? 1);
             ProductDAO proDAO = new ProductDAO();
-            return View(proDAO.getProductByCategoryID(CategoryID).OrderBy(n=>n.ID).ToPagedList(pageNumber,pageSize));
+            return View(proDAO.getProductByCategoryID(CategoryID).OrderBy(n => n.ID).ToPagedList(pageNumber, pageSize));
         }
-        public ActionResult getProductByCompany(int CompanyID,int? page)
+        public ActionResult getProductByCompany(int CompanyID, int? page)
         {
             int pageSize = 6;
             int pageNumber = (page ?? 1);
             ProductDAO proDAO = new ProductDAO();
-            return View(proDAO.getProductByCompanyID(CompanyID).OrderBy(n=>n.ID).ToPagedList(pageNumber,pageSize));
+            return View(proDAO.getProductByCompanyID(CompanyID).OrderBy(n => n.ID).ToPagedList(pageNumber, pageSize));
         }
         public ActionResult ProductDetail(int ProductID, int CategoryID)
         {
@@ -113,12 +114,20 @@ namespace btlonweb.Controllers
                 gioHang = (Cart)cart;
             }
             return PartialView(gioHang);
-         
+
         }
         public ActionResult setIndex()
         {
             Session[CommonConstants.USER_SESSION] = null;
             return RedirectToAction("Index", "Home", new { area = "" });
+        }
+        [HttpPost]
+        public ActionResult TimKiem()
+        {
+            string rs = Request.Form["txtTimKiem"];
+            ProductDAO dao = new ProductDAO();
+            IEnumerable<Product> ls = dao.ListAllPaging(rs);
+            return View(ls);
         }
     }
 }

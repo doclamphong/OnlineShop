@@ -31,11 +31,10 @@ namespace Model.Dao
             var rs = from sp in db.OrderDetails where sp.OrderID == id select sp;
             return rs;
         }
-        public User thongtinkhachhang(long id)
+        public User thongtinkhachhang(long id,long CustomerID)
         {
-            var idOr = db.Orders.SingleOrDefault(n=>n.ID==id);
-            long idC = idOr.CustomerID;
-            var rs = db.Users.SingleOrDefault(n=>n.ID==idC);
+           
+            var rs = db.Users.SingleOrDefault(n=>n.ID==CustomerID);
             return rs;
         }
         public bool Update(Order entity)

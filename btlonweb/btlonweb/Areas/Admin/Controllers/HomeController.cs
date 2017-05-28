@@ -12,7 +12,7 @@ namespace btlonweb.Areas.Admin.Controllers
     public class HomeController : Controller
     {
         // GET: Admin/Home
-       
+
         public ActionResult thongbao()
         {
             return View();
@@ -59,18 +59,14 @@ namespace btlonweb.Areas.Admin.Controllers
         {
             new OrderDao().Delete(id);
 
-            return RedirectToAction("thongtinkhachhang","Home",new { area="Admin",@id=id} );
+            return RedirectToAction("Index");
         }
         public ActionResult getOrderDetailbyOrder(long id)
         {
-            OrderDao dao= new OrderDao();
+            OrderDao dao = new OrderDao();
             return View(dao.getOrderDetailByOrder(id));
         }
-        public ActionResult thongtinkhachhang(long id)
-        {
-            OrderDao dao = new OrderDao();
-            return View(dao.thongtinkhachhang(id));
-        }
        
+
     }
 }

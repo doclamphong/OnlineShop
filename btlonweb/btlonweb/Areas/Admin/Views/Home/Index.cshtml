@@ -81,8 +81,8 @@
 
                                             @Ajax.ActionLink("Xoá", "Delete", new { @id = item.ID }, new AjaxOptions
                                        {
-
-                                           Confirm = "Bạn có muốn hủy đơn hàng này? ",
+                                        
+                                           Confirm = "Hãy liên hệ ngay với khách hàng, trước khi hủy đơn hàng này ?" +@item.CustomerID+ "",
                                            OnComplete = "$('#row_" + @item.ID + "').remove()",
                                            HttpMethod = "Delete"
                                        })

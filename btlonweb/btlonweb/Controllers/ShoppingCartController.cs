@@ -104,7 +104,7 @@ namespace btlonweb.Controllers
                 Order order = new Order();
                 order.CustomerID = user.UserID;
                 order.CreateDate = DateTime.Now;
-                order.Status = 0;
+                order.Status = false;
                 order.ShipName = Request.Form["txtShipName"];
                 order.ShipAddress = Request.Form["txtShipAddress"];
                 order.ShipMobile = Request.Form["txtShipMobile"];
