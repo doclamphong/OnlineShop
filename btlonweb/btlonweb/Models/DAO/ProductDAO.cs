@@ -62,11 +62,6 @@ namespace btlonweb.Models.DAO
             db.SaveChanges();
             return rs;
         }
-<<<<<<< HEAD
-        
-       
-=======
 
->>>>>>> origin/master
     }
 }
