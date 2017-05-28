@@ -13,16 +13,27 @@
                 </div>
                 <div class="mainmenu pull-left">
 
+<<<<<<< HEAD
           
+=======
+                    @*@Html.Action("MenuMain", "Home")*@
+>>>>>>> origin/master
 
 
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="search_box pull-right">
-                    <input type="text" placeholder="Search" />
+            @using (Html.BeginForm("TimKiem", "Home", FormMethod.Post))
+            {
+                <div class="col-sm-3">
+                    <div class="search_box pull-right">
+                        <input type="text" placeholder="Nhập kí tự" name="txtTimKiem" class="form-control" name="searchString" />
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                    </div>
                 </div>
-            </div>
+            }
+           
         </div>
     </div>
 </div>
