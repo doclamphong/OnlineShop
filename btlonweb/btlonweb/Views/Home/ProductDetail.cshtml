@@ -32,27 +32,29 @@
 
                 <span>
                     <span>@string.Format("{0:0,0}", Convert.ToInt32(Model.Price)) VNĐ</span>
+                    @if (Model.Status == true) { 
 
-                 
-                    @using (Html.BeginForm("AddNewItem", "ShoppingCart", new { @idProduct = Model.ID, @quantity = 1 }))
-                    {
-                        <button type="submit" style="cursor:progress" class="btn btn-fefault cart">
-                            <i class="fa fa-shopping-cart"></i>
-                            Add to cart
-                        </button>
+                        using (Html.BeginForm("AddNewItem", "ShoppingCart", new { @ProductID = Model.ID, @quantity = 1 }))
+                        {
+                            <button type="submit" style="cursor:progress" class="btn btn-fefault cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                Add to cart
+                            </button>
+                        }
                     }
-
+                    else
+                    {
+                        <label class="btn btn-fefault cart">Hết hàng</label>
+                    }
                 </span>
-                @if (@Model.Status == true)
+                @if (@Model.Status== true)
                 {
                     <p><b>Tình Trạng:</b> Còn hàng </p>
                 }
                 else
                 {
                     <p><b>Tình Trạng:</b> Hết hàng </p>
-                }
-
-                <p><b>Condition:</b> New</p>
+                }                
                 <p><b>Được bán bởi: </b> HLH-Shop </p>
 
             </div><!--/product-information-->

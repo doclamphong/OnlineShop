@@ -1,39 +1,44 @@
 ﻿@using Model.EF
-@model IEnumerable<Product>
+@using PagedList.Mvc
+@model PagedList.IPagedList<Product>
 @{
     ViewBag.Title = "getProductByCompany";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Danh sách sản phẩm</h2>
-@foreach (var item in Model)
-{
-    <div class="col-sm-3">
-        <div class="product-image-wrapper">
-            <div class="single-products">
-                <div class="productinfo text-center">
-                    <a href="@Url.Action("ProductDetail","Home",new { @ProductID=item.ID,@CategoryID = item.CategoryID})">
-                        <img src="@Url.Content("~/Content/images/AnhSanPham/"+item.Image)" alt="" />
-                    </a>
-                    <h2>@string.Format("{0:0,0}", Convert.ToInt32(item.Price)) VNĐ</h2>
+<div class="features_items">
+    <h2 class="title text-center">Danh sách sản phẩm</h2>
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-3">
+            <div class="product-image-wrapper">
+                <div class="single-products">
+                    <div class="productinfo text-center">
+                        <a href="@Url.Action("ProductDetail","Home",new { @ProductID=item.ID,@CategoryID = item.CategoryID})">
+                            <img src="@Url.Content("~/Content/images/AnhSanPham/"+item.Image)" alt="" />
+                        </a>
+                        <h2>@string.Format("{0:0,0}", Convert.ToInt32(item.Price)) VNĐ</h2>
 
-                    @if (item.Name.Length > 25)
-                    {
-                        <p>@item.Name.Substring(0, 25)...</p>
-                    }
-                    else
-                    {
-                        <p>@item.Name</p>
-                    }
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                </div>
-                <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                        <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=item.ID,@CategoryID= item.CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
-                    </ul>
+                        @if (item.Name.Length > 25)
+                        {
+                            <p>@item.Name.Substring(0, 25)...</p>
+                        }
+                        else
+                        {
+                            <p>@item.Name</p>
+                        }
+                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    </div>
+                    <div class="choose">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="@Url.Action("ProductDetail","Home",new {@ProductID=item.ID,@CategoryID= item.CategoryID})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-}
+    }
+</div>
 
+
+@Html.PagedListPager(Model, page => Url.Action("getProductByCompany", new { @CompanyID = Model.ElementAt(0).CompanyID, page = page }))

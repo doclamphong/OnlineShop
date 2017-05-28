@@ -1,6 +1,4 @@
-﻿@using btlonweb.Models.Bean
-@model Cart
-@{
+﻿@{
     Layout = null;
 }
 
@@ -48,72 +46,10 @@
         <!--/header-bottom-->
     </header><!--/header-->
 
-    <section id="cart_items">
-        <div class="container">
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Shopping Cart</li>
-                </ol>
-            </div>
-            <div class="table-responsive cart_info">
-                <table class="table table-condensed">
-                    <thead>
-                        <tr class="cart_menu">
-                            <td class="image">Item</td>
-                            <td class="description"></td>
-                            <td class="price">Price</td>
-                            <td class="quantity">Quantity</td>
-                            <td class="total">Total</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @if (Model._listItem.Count > 0)
-                        {
-                            foreach (var item in Model._listItem)
-                            {
-                                <tr>
-                                    <td class="cart_product">
-                                        <a href=""><img src="@Url.Content("~/Content/images/AnhSanPham/" + item._product.Image)" alt="" width="100"></a>
-                                    </td>
-                                    <td class="cart_description">
-                                        <h4><a href="">@item._product.Name</a></h4>
-                                        <p>Mã Sản Phẩm: @item._product.ID</p>
-                                    </td>
-                                    <td class="cart_price">
-                                        <p>@item._product.Price</p>
-                                    </td>
-                                    @using (Html.BeginForm("UpdateCart", "ShoppingCart", new { @ProductID = item._product.ID }))
-                                    {
-                                        <td class="cart_quantity">
-                                            <div class="cart_quantity_button">
+    <div class="alert alert-success">
+        <strong>Đặt hàng thành công!</strong> Cám ơn quý khách! <a href="@Url.Action("Index","Home",new { area=""})" class="alert-link">Tiếp tục mua hàng</a>
+    </div>
 
-                                                <input class="txtcart_quantity_input" type="text" name="txtSoLuong" value="@item._quantity" autocomplete="off" size="2" />
-
-                                            </div>
-                                        </td>
-                                        <td class="cart_total">
-                                            @{ var a = item.ThanhTien();}
-                                            <p class="cart_total_price">@string.Format("{0:0,0}", a) VNĐ</p>
-                                        </td>
-                                        <td><input type="submit" class="btn btn-primary" value="Cập nhật" /></td>
-                                                }
-                                    <td class="cart_delete">
-                                        <a class="cart_quantity_delete" href="@Url.Action("RemoveItem","ShoppingCart",new { @ProductID=item._product.ID})"><i class="fa fa-times"></i></a>
-                                    </td>
-                                </tr>
-                                                    }
-                                                }
-                    </tbody>
-                </table>
-
-            
-                <a href="@Url.Action("Index","Home",new { area=""})"><span class="btn btn-danger">Tiếp tục mua hàng</span> </a>
-               
-            </div>
-        </div>
-    </section>
     <footer id="footer">
         <!--Footer-->
         <div class="footer-top">

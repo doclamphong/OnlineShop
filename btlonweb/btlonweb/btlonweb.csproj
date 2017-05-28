@@ -1086,6 +1086,21 @@
     <Content Include="Assets\Client\js\main.js" />
     <Content Include="Assets\Client\js\price-range.js" />
     <Content Include="Content\images\AnhSanPham\lovite2.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp01.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp02.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp03.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp04.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp05.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp06.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp07.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp08.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp09.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp10.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp11.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp12.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp13.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp14.jpg" />
+    <Content Include="Content\images\AnhSanPham\sp15.jpg" />
     <Content Include="Content\images\AnhSanPham\Velvet7.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
@@ -1245,6 +1260,7 @@
     <Content Include="Views\Shared\HeaderCenterPartial.cshtml" />
     <Content Include="Views\ShoppingCart\ShoppingCartIndex.cshtml" />
     <Content Include="Views\ShoppingCart\SuaGioHang.cshtml" />
+    <Content Include="Views\ShoppingCart\ThanhToanThanhCong.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

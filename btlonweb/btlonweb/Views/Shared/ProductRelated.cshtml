@@ -20,7 +20,14 @@
                     {
                         <p>@item.Name</p>
                     }
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    @if (item.Status == true)
+                    {
+                        <a href="@Url.Action("AddNewItem","ShoppingCart",new {@ProductID=item.ID,@quantity=1})" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    }
+                    else
+                    {
+                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Hết hàng</a>
+                    }
                 </div>
                 <div class="choose">
                     <ul class="nav nav-pills nav-justified">

@@ -8,6 +8,7 @@ using Model.EF;
 using btlonweb.Models.DAO;
 using btlonweb.Models.Bean;
 using btlonweb.Common;
+using PagedList;
 namespace btlonweb.Controllers
 {
     public class HomeController : Controller
@@ -75,15 +76,19 @@ namespace btlonweb.Controllers
             return View();
         }
 
-        public ActionResult getProductByCategoryID(int CategoryID)
+        public ActionResult getProductByCategoryID(int CategoryID,int? page)
         {
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
             ProductDAO proDAO = new ProductDAO();
-            return View(proDAO.getProductByCategoryID(CategoryID));
+            return View(proDAO.getProductByCategoryID(CategoryID).OrderBy(n=>n.ID).ToPagedList(pageNumber,pageSize));
         }
-        public ActionResult getProductByCompany(int CompanyID)
+        public ActionResult getProductByCompany(int CompanyID,int? page)
         {
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
             ProductDAO proDAO = new ProductDAO();
-            return View(proDAO.getProductByCompanyID(CompanyID));
+            return View(proDAO.getProductByCompanyID(CompanyID).OrderBy(n=>n.ID).ToPagedList(pageNumber,pageSize));
         }
         public ActionResult ProductDetail(int ProductID, int CategoryID)
         {

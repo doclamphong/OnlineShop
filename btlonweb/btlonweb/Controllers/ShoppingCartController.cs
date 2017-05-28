@@ -87,7 +87,6 @@ namespace btlonweb.Controllers
         [HttpPost]
         public ActionResult DatHang()
         {
-
             if (ModelState.IsValid)
             {
                 if (Session[CommonConstants.USER_SESSION] == null)
@@ -106,19 +105,9 @@ namespace btlonweb.Controllers
                 order.CustomerID = user.UserID;
                 order.CreateDate = DateTime.Now;
                 order.Status = 0;
-                var shipName = Request.Form["txtShipName"];
-                if (shipName == null || shipName == "") {
-                    order.ShipName = "Hoan";
-                }
-                else
-                {
-                    order.ShipName = shipName;
-                }
-                order.ShipAddress = "Hoan";
-                  order.ShipMobile = "0987";
-                //order.ShipAddress = Request.Form["txtShipAddress"];
-                //order.ShipMobile = Request.Form["txtShipMobile"];
-
+                order.ShipName = Request.Form["txtShipName"];
+                order.ShipAddress = Request.Form["txtShipAddress"];
+                order.ShipMobile = Request.Form["txtShipMobile"];
                 db.Orders.Add(order);
                 db.SaveChanges();
                 foreach (var item in gioHang._listItem)
@@ -133,7 +122,11 @@ namespace btlonweb.Controllers
                 db.SaveChanges();
                 Session[CommonConstants.CartSession] = null;
             }
-            return RedirectToAction("Index", "Home", new { area = "" });
+            return RedirectToAction("ThanhToanThanhCong", "ShoppingCart", new { area = "" });
+        }
+        public ActionResult ThanhToanThanhCong()
+        {
+            return View();
         }
     }
 }

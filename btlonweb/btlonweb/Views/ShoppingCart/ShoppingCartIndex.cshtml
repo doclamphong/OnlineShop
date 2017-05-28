@@ -113,12 +113,12 @@
             </div>
             @using (Html.BeginForm("DatHang","ShoppingCart",FormMethod.Post))
             {
-                @Html.ValidationSummary(true)
+             
                 <div class="table-responsive cart_info">
                     <table class="table table-condensed">
                         <thead>
                             <tr class="cart_menu">
-                                <td class="image">Khách hàng nhận </td>
+                                <td class="image">Thông tin khách hàng nhận </td>
                                 <td></td>
                                
                             </tr>
@@ -137,7 +137,7 @@
                             </tr>
                             <tr>
                                 <td class="cart_product"><lable class="ui-controlgroup-label">Số điện thoại người nhận: </lable></td>
-                                <td class="cart_description"><input type="text" class="form-control" placeholder="Enter ShipMobile" name="txtShipMobile" required   /></td>
+                                <td class="cart_description"><input type="text" class="form-control" placeholder="Enter ShipMobile" name="txtShipMobile" required pattern="\d*" maxlength="15"   /></td>
 
                             </tr>
 
