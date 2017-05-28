@@ -92,6 +92,7 @@ namespace btlonweb.Controllers
         }
         public ActionResult ProductDetail(int ProductID, int CategoryID)
         {
+            
             ProductDAO proDAO = new ProductDAO();
             Session["SPLQ"] = null;
             Session["SPLQ"] = CategoryID;

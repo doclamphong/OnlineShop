@@ -58,6 +58,7 @@ namespace Model.Dao
         {
             return db.Orders.Find(id);
         }
+        
         public bool Delete(long id)
         {
             try

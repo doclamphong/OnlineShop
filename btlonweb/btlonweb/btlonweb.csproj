@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -249,6 +250,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\TaiKhoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1268,6 +1270,8 @@
     <Content Include="Views\ShoppingCart\ShoppingCartIndex.cshtml" />
     <Content Include="Views\ShoppingCart\SuaGioHang.cshtml" />
     <Content Include="Views\ShoppingCart\ThanhToanThanhCong.cshtml" />
+    <Content Include="Views\TaiKhoan\DangKyThanhCong.cshtml" />
+    <Content Include="Views\TaiKhoan\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

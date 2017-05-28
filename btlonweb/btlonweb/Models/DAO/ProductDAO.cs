@@ -33,10 +33,13 @@ namespace btlonweb.Models.DAO
             return rs;
         }
         public Product ProductDetail(int ProductID)
-        {
+        {        
             var rs = db.Products.SingleOrDefault(n => n.ID == ProductID);
+            rs.ViewCount++;
+            db.SaveChanges();
             return rs;
         }
+        
        
     }
 }
