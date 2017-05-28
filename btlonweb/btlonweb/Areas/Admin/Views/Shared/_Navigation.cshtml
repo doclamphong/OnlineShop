@@ -1,4 +1,5 @@
-﻿
+﻿@using btlonweb.Common
+@{ var user = (UserLogin)Session[CommonConstants.USER_SESSION];}
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -13,14 +14,14 @@
     <ul class="nav navbar-top-links navbar-right">
         <li>
             @*@using (Html.BeginForm("ChangeCulture", "Base"))
-            {
-                @Html.Hidden("returnUrl", Request.RawUrl)
-                @Html.DropDownList("ddlCulture", new SelectList(new[] {
-                    new {value="vi",text=StaticResources.Resources.Vietnamese},
-                    new {value="en",text=StaticResources.Resources.English},
+                {
+                    @Html.Hidden("returnUrl", Request.RawUrl)
+                    @Html.DropDownList("ddlCulture", new SelectList(new[] {
+                        new {value="vi",text=StaticResources.Resources.Vietnamese},
+                        new {value="en",text=StaticResources.Resources.English},
 
-                    }, "value", "text", Session[btlonweb.Common.CommonConstants.CurrentCulture]), new { onchange = "this.form.submit();" })
-            }*@
+                        }, "value", "text", Session[btlonweb.Common.CommonConstants.CurrentCulture]), new { onchange = "this.form.submit();" })
+                }*@
         </li>
 
         <li class="dropdown">
@@ -220,15 +221,11 @@
             </a>
             <ul class="dropdown-menu dropdown-user">
                 <li>
-                    <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    <a href="@Url.Action("setIndex","Home",new {area="Admin"})"><i class="fa fa-sign-out fa-fw"></i>@user.UserName</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                </li>
+              
+               
+              
             </ul>
             <!-- /.dropdown-user -->
         </li>
@@ -255,11 +252,11 @@
                 <li>
                     <a href="#"><i class="fa fa-user fa-fw"></i> Hệ thống<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
+                        @*<li>
                             <a href="/Admin/UserGroup/Index">Nhóm người dùng</a>
-                        </li>
+                        </li>*@
                         <li>
-                           
+
                             <a href="@Url.Action("Index","User")">User</a>
                         </li>
                     </ul>
@@ -268,9 +265,9 @@
                 <li>
                     <a href="#"><i class="fa fa-comment fa-fw"></i> Tin tức<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
+                        @*<li>
                             <a href="/Admin/Category/Index">Danh mục</a>
-                        </li>
+                        </li>*@
                         <li>
                             <a href="/Admin/Content/Index">Tin tức</a>
                         </li>
@@ -280,11 +277,11 @@
                 <li>
                     <a href="#"><i class="fa fa-bell fa-fw"></i> Sản phẩm<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
+                        @*<li>
                             <a href="/Admin/ProductCategory/Index">Danh mục</a>
-                        </li>
+                        </li>*@
                         <li>
-                            <a href="/Admin/Product/Index">Tin tức</a>
+                            <a href="/Admin/Product/Index">Sản phẩm</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->

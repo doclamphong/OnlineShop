@@ -13,7 +13,7 @@
 
         public DateTime? CreateDate { get; set; }
 
-        public long? CustomerID { get; set; }
+        public long CustomerID { get; set; }
 
         [Required(ErrorMessage ="Vui lòng nhập thông tin người nhận")]
         [StringLength(50)]
